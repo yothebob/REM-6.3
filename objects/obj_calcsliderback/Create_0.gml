@@ -1,0 +1,2 @@
+global.calcslider = false;
+

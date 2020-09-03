@@ -1,0 +1,1 @@
+global.ipf = global.stairpost - global.tallpost;
