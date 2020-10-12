@@ -24,7 +24,6 @@
     {"isDnD":true,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_masterposts","path":"objects/obj_masterposts/obj_masterposts.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":true,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_masterposts","path":"objects/obj_masterposts/obj_masterposts.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":true,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"postcontroller","path":"objects/postcontroller/postcontroller.yy",},"parent":{"name":"obj_masterposts","path":"objects/obj_masterposts/obj_masterposts.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":45,"eventType":9,"collisionObjectId":null,"parent":{"name":"obj_masterposts","path":"objects/obj_masterposts/obj_masterposts.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":true,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_masterposts","path":"objects/obj_masterposts/obj_masterposts.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],

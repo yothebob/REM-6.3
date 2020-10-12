@@ -34,6 +34,8 @@ if mouse_check_button_released(mb_left) {
 		draw_line_width(x1,y1,x2,y2,control.width);
 		draw_set_color(color);
 		draw_line_color(x1,y1,x2,y2,color,color);
+		buffer = buffer_create(1920*1080*4,buffer_grow,1);
+		buffer_get_surface(buffer,control.surface,buffer_surface_copy,0,1);
 		surface_reset_target();
 	}
 }

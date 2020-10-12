@@ -1,12 +1,6 @@
 x = mouse_x;
 y = mouse_y;
 
-//global.start = mouse_x;
-//global.starty = mouse_y;
-//global.end1 = mouse_x;
-//global.endy = mouse_y;
-
-//point_distance(global.start,global.starty,global.end1, global.endy) 
 
 if (global.tool = tool.cable or tool.line)
 {
@@ -42,5 +36,3 @@ global.drawx = mouse_x - global.xstar;
 global.drawy = mouse_y - global.ystar;
 
 }
-
-//Line Follow mouse

@@ -5,7 +5,7 @@
 
 //The surface
 surface = surface_create(1920,1080);
-
+buffer = 0
 
 //Mouse/drawing position
 mx = mouse_x 

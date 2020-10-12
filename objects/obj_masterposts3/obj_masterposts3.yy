@@ -21,7 +21,6 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":true,"eventNum":45,"eventType":9,"collisionObjectId":null,"parent":{"name":"obj_masterposts3","path":"objects/obj_masterposts3/obj_masterposts3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":true,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_masterposts3","path":"objects/obj_masterposts3/obj_masterposts3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":true,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"postcontroller","path":"objects/postcontroller/postcontroller.yy",},"parent":{"name":"obj_masterposts3","path":"objects/obj_masterposts3/obj_masterposts3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":true,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_masterposts3","path":"objects/obj_masterposts3/obj_masterposts3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
