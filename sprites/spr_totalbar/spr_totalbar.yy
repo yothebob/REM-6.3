@@ -26,6 +26,7 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"8259ca4e-b393-43c6-bc3f-c8a768c1af4f","path":"sprites/spr_totalbar/spr_totalbar.yy",},"LayerId":null,"resourceVersion":"1.0","name":"composite","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"8259ca4e-b393-43c6-bc3f-c8a768c1af4f","path":"sprites/spr_totalbar/spr_totalbar.yy",},"LayerId":{"name":"4f39a45b-698c-47c0-8700-475ba7815fa4","path":"sprites/spr_totalbar/spr_totalbar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"8259ca4e-b393-43c6-bc3f-c8a768c1af4f","path":"sprites/spr_totalbar/spr_totalbar.yy",},"LayerId":{"name":"b724171d-451f-4ae1-aa05-76fd0483bfbd","path":"sprites/spr_totalbar/spr_totalbar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_totalbar","path":"sprites/spr_totalbar/spr_totalbar.yy",},"resourceVersion":"1.0","name":"8259ca4e-b393-43c6-bc3f-c8a768c1af4f","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -44,7 +45,7 @@
             {"id":"d0861cf3-072d-4497-9e86-0c06ff1aad15","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8259ca4e-b393-43c6-bc3f-c8a768c1af4f","path":"sprites/spr_totalbar/spr_totalbar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -65,7 +66,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4f39a45b-698c-47c0-8700-475ba7815fa4","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"b724171d-451f-4ae1-aa05-76fd0483bfbd","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "menubars",

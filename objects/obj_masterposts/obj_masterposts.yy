@@ -30,7 +30,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "postbutton",
-    "path": "folders/Objects/postbutton.yy",
+    "path": "folders/Objects/posts/postbutton.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_masterposts",

@@ -15,7 +15,7 @@ for (i = 9; i > 0; i = i -1)
 {
 if tr[i] > 0
 {
- c[i]= c_lime;
+ c[i]= c_green;
 }
 else
 {
@@ -36,31 +36,31 @@ switch keyboard_key
 case vk_numpad1:
 tr[1] = get_integer("enter top rail length",tr[1]);
 break;
-case vk_numpad2:
+case vk_numpad2: 
 tr[2] = get_integer("enter top rail length",tr[2]);
 break;
-case vk_numpad3:
+case vk_numpad3: 
 tr[3] = get_integer("enter top rail length",tr[3]);
 break;
-case vk_numpad4:
+case vk_numpad4: 
 tr[4] = get_integer("enter top rail length",tr[4]);
 break;
-case vk_numpad5:
+case vk_numpad5: 
 tr[5] = get_integer("enter top rail length",tr[5]);
 break;
-case vk_numpad6:
+case vk_numpad6: 
 tr[6] = get_integer("enter top rail length",tr[6]);
 break;
 case vk_numpad7:
 tr[7] = get_integer("enter top rail length",tr[7]);
 break;
-case vk_numpad8:
+case vk_numpad8: 
 tr[8] = get_integer("enter top rail length",tr[8]);
 break;
-case vk_numpad9:
+case vk_numpad9: 
 tr[9] = get_integer("enter top rail length",tr[9]);
 break;
-case vk_numpad0:
+case vk_numpad0: 
 global.stairrail = get_integer("Total Stair LF",global.stairrail);
 break;
 }

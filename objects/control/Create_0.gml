@@ -1,11 +1,11 @@
 /// @description Variables
 
 // save
-
+tick = 60;
 
 //The surface
 surface = surface_create(1920,1080);
-buffer = 0
+buffer = buffer_create(1920*1080*4,buffer_grow,1);
 
 //Mouse/drawing position
 mx = mouse_x 

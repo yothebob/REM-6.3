@@ -25,7 +25,6 @@
     {"isDnD":false,"eventNum":67,"eventType":9,"collisionObjectId":null,"parent":{"name":"obj_smart_calc","path":"objects/obj_smart_calc/obj_smart_calc.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":82,"eventType":9,"collisionObjectId":null,"parent":{"name":"obj_smart_calc","path":"objects/obj_smart_calc/obj_smart_calc.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":71,"eventType":9,"collisionObjectId":null,"parent":{"name":"obj_smart_calc","path":"objects/obj_smart_calc/obj_smart_calc.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":16,"eventType":9,"collisionObjectId":null,"parent":{"name":"obj_smart_calc","path":"objects/obj_smart_calc/obj_smart_calc.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

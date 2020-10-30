@@ -1,5 +1,8 @@
 /// @description Open a file when clicked
-if mouse_check_button_pressed(mb_left) && distance_to_point(mouse_x,mouse_y) <= 1 {
+
+var hotkey = keyboard_check(vk_control) and keyboard_check_pressed(ord("O"));
+
+if mouse_check_button_pressed(mb_left) && distance_to_point(mouse_x,mouse_y) <= 1 or hotkey {
 	var file = get_open_filename("drawing|*.png", "");
 	if file != "" {
 		var opened_image = sprite_add(file,1,true,true,32,32);

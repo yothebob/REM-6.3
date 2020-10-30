@@ -1,7 +1,19 @@
 /// @description Description of tool
 draw_self();
-if (place_meeting(x,y,obj_mouse)) {
+
+if (place_meeting(x,y,obj_mouse))
+{
+tick = tick -1;
+image_index = 1;	
+}
+else
+{
+tick = 10;
+image_index = 0;
+}
+if tick <= 0 and place_meeting(x,y, obj_mouse)
+{
+	
 	draw_set_color(c_black);
-	//draw_set_halign(fa_left);
-	draw_text(x,y+10,"Draw Width");
+	draw_text(mouse_x-10,mouse_y+10,"Draw Width (W)");
 }

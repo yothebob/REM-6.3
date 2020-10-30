@@ -9,6 +9,7 @@ tr[7] = 0;
 tr[8] = 0;
 tr[9] = 0;
 
+total = 0;
 
 trr[1] = 0;
 trr[2] = 0;
@@ -28,7 +29,7 @@ remainder = 1;
 // offset
 offset = 
 {
-o1 : 570,
+o1 : 580,
 o2 : 475,
 o3 : 400,
 };
@@ -60,7 +61,7 @@ global.threesix = true;
 
 
 //tr375
-global.tr375 = 0;
+//global.tr375 = 0;
 
 // parts totals
 global.rcb1 = 0;

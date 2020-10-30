@@ -1,9 +1,5 @@
 /// @description cable calc.
 
-//TR375 Calc
-if(!global.tr375)
-{
-
 global.getcable = 1;
 
 if (global.getcable = 1)
@@ -46,7 +42,7 @@ global.tt = ((threeside + global.endpost) * 11);
 global.aw = (global.tallpost/2) *11;
 }
 
-global.br = ceil(picket/20)
+global.br = (ceil((picket/10)*1.1)/2);
 if (global.stairpost < 1)
 {
 global.rcb1 = (global.posts *2) - global.ep;
@@ -59,12 +55,10 @@ global.rcb112 = ceil(((global.tallpost *2) + ((global.stairpost - global.tallpos
 }
 
 }
-}
 
-
-else
 
 // TR200 calcs.
+/*
 {
 global.getcable = 1;
 

@@ -1,10 +1,18 @@
-/// @DnDAction : YoYo Games.Common.Execute_Code
-/// @DnDVersion : 1
-/// @DnDHash : 1ACBE4D0
-/// @DnDArgument : "code" "draw_self();$(13_10)$(13_10)if (place_meeting(x,y,obj_mouse))$(13_10){$(13_10)draw_text(x,y+10,"Help");	$(13_10)}$(13_10)$(13_10)$(13_10)"
 draw_self();
 
 if (place_meeting(x,y,obj_mouse))
 {
-draw_text(x,y+10,"Help");	
+tick = tick -1;
+image_index = 1;
+}
+else
+{
+tick = 10;
+image_index	= 0;
+}
+if tick <= 0 and place_meeting(x,y, obj_mouse)
+{
+	
+	draw_set_color(c_black);
+	draw_text(mouse_x-10,mouse_y+10,"Help (F1)");
 }

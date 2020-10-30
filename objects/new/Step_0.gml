@@ -1,5 +1,8 @@
 /// @description New file/Start from 0
-if mouse_check_button_pressed(mb_left) && distance_to_point(mouse_x,mouse_y) <= 1 {
+
+var hotkey = keyboard_check(vk_control) and keyboard_check_pressed(ord("N"));
+
+if (mouse_check_button_pressed(mb_left) && distance_to_point(mouse_x,mouse_y) <= 1) or hotkey {
 	if show_question("Are you sure to start a new drawing?") {
 		with(control) {
 			surface_set_target(surface);

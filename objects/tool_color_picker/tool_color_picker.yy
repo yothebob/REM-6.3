@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Tools",
-    "path": "folders/Objects/Draw & Color picker/Tools.yy",
+    "name": "icons",
+    "path": "folders/Objects/Draw & Color picker/icons.yy",
   },
   "resourceVersion": "1.0",
   "name": "tool_color_picker",

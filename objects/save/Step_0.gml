@@ -1,16 +1,8 @@
 /// @description Save when clicked
 
-// find screenshot in new screenshot object
-//if(keyboard_check(vk_f11))
-//{
-//file = get_save_filename("screenshot|*.png", "");
-//if file != ""
-   // {
-   // screen_save(file);
-    //}
-//}
+var hotkey = keyboard_check(vk_control) and keyboard_check_pressed(ord("S"));
 
-if mouse_check_button_pressed(mb_left) && distance_to_point(mouse_x,mouse_y) <= 1 {
+if (mouse_check_button_pressed(mb_left) && distance_to_point(mouse_x,mouse_y) <= 1) or hotkey {
 	surface_copy(obackground.background,0,0,control.surface);
 	
 	var file = get_save_filename("png|*.png", "");

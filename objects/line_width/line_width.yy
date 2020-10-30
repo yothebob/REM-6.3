@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Draw & Color picker",
-    "path": "folders/Objects/Draw & Color picker.yy",
+    "name": "icons",
+    "path": "folders/Objects/Draw & Color picker/icons.yy",
   },
   "resourceVersion": "1.0",
   "name": "line_width",

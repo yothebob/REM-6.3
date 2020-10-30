@@ -1,2 +1,2 @@
-xopen = 1720;
+xopen = 1710;
 xclose = 2000;

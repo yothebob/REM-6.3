@@ -6,3 +6,4 @@ y1 = y;
 y2 = y;
 
 image_speed = 0;
+tick = 10;

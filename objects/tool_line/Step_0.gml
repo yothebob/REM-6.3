@@ -1,6 +1,9 @@
 ///@description Select the tool
-if mouse_check_button_pressed(mb_left) {
-	if distance_to_point(mouse_x,mouse_y)<= 1 {
+
+var hotkey = keyboard_check(vk_control) and keyboard_check_pressed(ord("L"));
+
+if mouse_check_button_pressed(mb_left) and distance_to_point(mouse_x,mouse_y)<= 1 or hotkey
+	{
 		global.tool = tool.line;
 		window_set_cursor(cr_none);
 	cursor_sprite = cursor_other;
@@ -11,7 +14,7 @@ if mouse_check_button_pressed(mb_left) {
 		x1 = round(mouse_x/global.gridsize)*global.gridsize;
 		y1 = round(mouse_y/global.gridsize)*global.gridsize;
 	}
-}
+
 
 if mouse_check_button_released(mb_left) {
 	if global.tool = tool.line {
@@ -34,8 +37,6 @@ if mouse_check_button_released(mb_left) {
 		draw_line_width(x1,y1,x2,y2,control.width);
 		draw_set_color(color);
 		draw_line_color(x1,y1,x2,y2,color,color);
-		buffer = buffer_create(1920*1080*4,buffer_grow,1);
-		buffer_get_surface(buffer,control.surface,buffer_surface_copy,0,1);
 		surface_reset_target();
 	}
 }

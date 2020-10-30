@@ -1,9 +1,11 @@
 ///@description Select the tool
-if mouse_check_button_pressed(mb_left) {
-	if distance_to_point(mouse_x,mouse_y)<= 1 {
-		global.tool = tool.pen;
+
+var hotkey = keyboard_check(vk_control) and keyboard_check_pressed(ord("P"))
+
+if mouse_check_button_pressed(mb_left) and distance_to_point(mouse_x,mouse_y)<= 1 or hotkey
+	{
+	global.tool = tool.pen;
 	}
-}
 
 //Change the image when the tool is selected
 if global.tool = tool.pen || distance_to_point(mouse_x,mouse_y)<=1 {

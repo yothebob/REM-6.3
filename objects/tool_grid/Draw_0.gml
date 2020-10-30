@@ -4,5 +4,17 @@ draw_self();
 
 if (place_meeting(x,y,obj_mouse))
 {
-draw_text(x,y+10,"Grid Snap");	
+tick = tick -1;
+image_index = 1;
+}
+else
+{
+tick = 10;
+image_index	= 0;
+}
+if tick <= 0 and place_meeting(x,y, obj_mouse)
+{
+	
+	draw_set_color(c_black);
+	draw_text(mouse_x-10,mouse_y+10,"Grid");
 }
