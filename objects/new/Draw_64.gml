@@ -1,5 +1,8 @@
 /// @description Description of tool
+if Default
+{
 draw_self();
+}
 
 if (place_meeting(x,y,obj_mouse))
 {

@@ -18,8 +18,11 @@ else
 // calculate tr using 'smart' calculator----------------
 if global.tr_end < 1 and global.posts > 0
 {
+if Default
+{
+bubblesort(tr);
+}
 
-//bubblesort(tr);
 
 var i;
 for (i = 9; i > 0; i = i - 1)

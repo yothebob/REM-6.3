@@ -141,7 +141,9 @@
   "tutorialPath": "",
   "configs": {
     "name": "Default",
-    "children": [],
+    "children": [
+      {"name":"HTML","children":[],},
+    ],
   },
   "RoomOrder": [
     {"name":"room0","path":"rooms/room0/room0.yy",},
