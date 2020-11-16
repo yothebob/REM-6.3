@@ -1,15 +1,19 @@
-/// @DnDAction : YoYo Games.Common.Execute_Code
-/// @DnDVersion : 1
-/// @DnDHash : 2386D055
-/// @DnDArgument : "code" "if global.pan = false$(13_10){$(13_10)if (mouse_wheel_up())$(13_10){$(13_10)x = x+32;$(13_10)}$(13_10)if (mouse_wheel_down())$(13_10){$(13_10)x = x-32;$(13_10)}$(13_10)}$(13_10)"
-if global.pan = false
-{
+
+
 if (mouse_wheel_up())
 {
 x = x+32;
 }
+
 if (mouse_wheel_down())
 {
 x = x-32;
 }
-}
+
+if distance_to_object(obj_mouse) < radius and obj_mouse.x > 1525 and obj_mouse.x < 1670 and obj_mouse.y < 60
+	{
+	if mouse_check_button_pressed(mb_left)
+		{
+		x = (round(obj_mouse.x/32) * 32);
+		}
+	}

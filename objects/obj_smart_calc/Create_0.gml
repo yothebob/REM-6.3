@@ -36,34 +36,35 @@ o3 : 400,
 
 color = 0;
 
-c[1] = c_black;
-c[2] = c_black;
-c[3] = c_black;
-c[4] = c_black;
-c[5] = c_black;
-c[6] = c_black;
-c[7] = c_black;
-c[8] = c_black;
-c[9] = c_black;
+c[1] = c_dkgray;
+c[2] = c_dkgray;
+c[3] = c_dkgray;
+c[4] = c_dkgray;
+c[5] = c_dkgray;
+c[6] = c_dkgray;
+c[7] = c_dkgray;
+c[8] = c_dkgray;
+c[9] = c_dkgray;
 
-cr[1] = c_black;
-cr[2] = c_black;
-cr[3] = c_black;
-cr[4] = c_black;
-cr[5] = c_black;
-cr[6] = c_black;
-cr[7] = c_black;
-cr[8] = c_black;
-cr[9] = c_black;
+cr[1] = c_dkgray;
+cr[2] = c_dkgray;
+cr[3] = c_dkgray;
+cr[4] = c_dkgray;
+cr[5] = c_dkgray;
+cr[6] = c_dkgray;
+cr[7] = c_dkgray;
+cr[8] = c_dkgray;
+cr[9] = c_dkgray;
 
 // 36"
 global.threesix = true;
-
+global.glass = false;
 
 //tr375
 //global.tr375 = 0;
 
 // parts totals
+global.fascia = false;
 global.rcb1 = 0;
 global.stairpost = 0;
 global.tallpost = 0;

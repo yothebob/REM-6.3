@@ -7,6 +7,6 @@ draw_text_color(xoffset,yoffset,_string + string(_value),c_green, c_green, c_gre
 }
 else
 {
-draw_text(xoffset,yoffset,_string + string(_value));
+draw_text_color(xoffset,yoffset,_string + string(_value),c_dkgray,c_dkgray,c_dkgray,c_dkgray,1);
 }
 }

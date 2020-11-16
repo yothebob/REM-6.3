@@ -1,14 +1,13 @@
 /// @description Draw always to mouse position
 
-tick = tick -1;
-if tick <= 0 and surface_exists(surface)
+
+if mouse_check_button_released(mb_left) and surface_exists(surface)
 	{
 	surface_set_target(surface);
 	buffer_delete(buffer);
 	buffer = buffer_create(1920*1080*4,buffer_grow,1);
 	buffer_get_surface(buffer,surface,0,0,0);
 	surface_reset_target();
-	tick = 60;
 	}
 
 if (mouse_check_button(mb_left)) { mxp = mx; myp = my;}

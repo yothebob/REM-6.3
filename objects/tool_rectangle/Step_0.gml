@@ -2,7 +2,8 @@
 
 var hotkey = keyboard_check(vk_control) and keyboard_check_pressed(ord("R"))
 
-if mouse_check_button_pressed(mb_left) and distance_to_point(mouse_x,mouse_y)<= 1 or hotkey{
+if mouse_check_button_pressed(mb_left) or hotkey{
+	if distance_to_point(mouse_x,mouse_y)<= 1 or hotkey{
 		global.tool = tool.rectangle;
 	}
 	//Set the start point of the rectangle
@@ -11,6 +12,7 @@ if mouse_check_button_pressed(mb_left) and distance_to_point(mouse_x,mouse_y)<= 
 		x1 = mouse_x;
 		y1 = mouse_y;
 	}
+}
 
 if mouse_check_button_released(mb_left) {
 	if global.tool = tool.rectangle {
@@ -37,8 +39,7 @@ if mouse_check_button_released(mb_left) {
 if global.tool = tool.rectangle {
 	
 	//Set the cursor sprite
-	window_set_cursor(cr_none);
-	cursor_sprite = cursor_other;
+	window_set_cursor(cr_default);
 	
 	//Set the other point of the rectangle
 	if holding = true {

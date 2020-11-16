@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"screenshot_icon","path":"sprites/screenshot_icon/screenshot_icon.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "screenshot_icon",
     "tags": [],
     "resourceType": "GMSequence",
   },

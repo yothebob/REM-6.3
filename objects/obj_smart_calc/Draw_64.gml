@@ -1,6 +1,6 @@
 ///@description drawing calculator & lengths
 
-draw_set_color(c_black);
+draw_set_color(c_dkgray);
 draw_set_halign(fa_left);
 
 if(global.calcslider = true)
@@ -30,7 +30,7 @@ if total < 1
 	}
 	else if total >= 1
 	{
-	draw_text_ext_color(x-offset.o2-40,y+270, "Total TR200 LF :" + (string(total)),3,200,c_green,c_green,c_green,c_green,1);
+	draw_text_color(x-offset.o2-40,y+270, "Total TR200 LF :" + (string(total)),c_green,c_green,c_green,c_green,1);
 	}
 if global.stairrail < 1
 	{
@@ -38,7 +38,7 @@ if global.stairrail < 1
 	}
 	else if global.stairrail > 1
 	{
-	draw_text_ext_color(x-offset.o2-30,y+300, "Total Stair LF :" + (string(global.stairrail)),3,200,c_green,c_green,c_green,c_green,1);
+	draw_text_color(x-offset.o2-30,y+300, "Total Stair LF :" + (string(global.stairrail)),c_green,c_green,c_green,c_green,1);
 	}
 if (total + global.stairrail) < 1
 	{
@@ -46,7 +46,7 @@ if (total + global.stairrail) < 1
 	}
 else if (total+ global.stairrail) > 1
 	{
-	draw_text_ext_color(x-offset.o2,y+330, "Total LF :" + (string(total + global.stairrail)),3,200,c_green,c_green,c_green,c_green,1);	
+	draw_text_color(x-offset.o2,y+330, "Total LF :" + (string(total + global.stairrail)),c_green,c_green,c_green,c_green,1);	
 	}
 	
 draw_text(x-offset.o1, y + offset.o3 -30,"Max len. to scrap? : " + string(remainder));
@@ -54,8 +54,8 @@ draw_text(x-offset.o1,y + offset.o3,"% of wiggle room : " + string(fudge));
 
 if (totalcost > 1)
 {
-draw_text_color(x-offset.o1-20,y+(offset.o2), " Ttl: " + (string(totalcost)),c_blue,c_blue,c_blue,c_blue,1);
-draw_text_color(x-offset.o2,y+offset.o2 , " Ttl + 5%: " + (string(totalcost *1.05)),c_red,c_red,c_red,c_red,1);
+draw_text_color(x-offset.o1-20,y+(offset.o2), " Total: " + (string(totalcost)) + " - " + string(totalcost*1.05),c_blue,c_blue,c_blue,c_blue,1);
+
 }
 else
 {

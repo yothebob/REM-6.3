@@ -2,7 +2,7 @@
 
 var hotkey = keyboard_check(vk_control) and keyboard_check_pressed(ord("N"));
 
-if (mouse_check_button_pressed(mb_left) && distance_to_point(mouse_x,mouse_y) <= 1) or hotkey {
+if (mouse_check_button_pressed(mb_left) && distance_to_point(device_mouse_x_to_gui(0),device_mouse_y_to_gui(0)) <= 1) or hotkey {
 	if show_question("Are you sure to start a new drawing?") {
 		with(control) {
 			surface_set_target(surface);

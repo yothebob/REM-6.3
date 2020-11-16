@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "total_scripts",
+    "path": "folders/Scripts/total_scripts.yy",
   },
   "resourceVersion": "1.0",
   "name": "init_total",

@@ -9,8 +9,7 @@ global.tool = tool.eraser;
 
 if global.tool = tool.eraser {
 	//Set the cursor sprite
-	window_set_cursor(cr_none);
-	cursor_sprite = cursor_eraser;
+	window_set_cursor(cr_default);
 	
 	//Set the eraser width automatically to 10
 	if set = false {

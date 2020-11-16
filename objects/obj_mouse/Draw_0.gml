@@ -1,28 +1,25 @@
 //draw_self();
-if (drawline = true)
+
+
+
+if (drawline == true)
 {
 	if (mouse_check_button(mb_left))
 {
 release = false;
-draw_text(mouse_x +50 ,mouse_y + 50, string((abs(global.drawx - global.drawy)/32)));
-}
-else
-{	
-	draw_set_color(c_black);
-	draw_text(mouse_x + 50,mouse_y + 50, string(global.scale));
+draw_text(mouse_x +50 ,mouse_y + 50, string(((sqrt(abs(sqr(x-global.xstar) + sqr(y-global.ystar))))/32)));
 }
 	
 
 draw_set_color(c_black);
-//draw_text(500,500,radius);
-if (drawline = false and mouse_check_button(mb_left))
+if (drawline == false and mouse_check_button(mb_left))
 {
 	xStart = x
 	yStart = y
 draw_line(xStart,yStart,mouse_x,mouse_y);
 }
 
-if (mouse_check_button_released(mb_left) and global.tool = tool.cable)
+if (mouse_check_button_released(mb_left) and global.tool == tool.cable)
 {
 	release = true;
 }
@@ -35,7 +32,7 @@ if (release = true and global.scale > 1)
 		release = false;
 	}
 
-if (drawline = true)
+if (drawline == true)
 {
 
 if (mouse_check_button(mb_left))
@@ -56,7 +53,3 @@ else
 }
 }
 
-
-// draw grid lines (for cursor)
-draw_sprite(cursor_line,0,mouse_x-2500,mouse_y);
-draw_sprite(cursor_line2,0,mouse_x,mouse_y-2500);

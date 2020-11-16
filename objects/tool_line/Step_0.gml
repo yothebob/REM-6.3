@@ -2,22 +2,28 @@
 
 var hotkey = keyboard_check(vk_control) and keyboard_check_pressed(ord("L"));
 
-if mouse_check_button_pressed(mb_left) and distance_to_point(mouse_x,mouse_y)<= 1 or hotkey
+if mouse_check_button_pressed(mb_left) or hotkey{
+
+	if distance_to_point(mouse_x,mouse_y)<= 1 or hotkey
 	{
+		control.width = 3;
 		global.tool = tool.line;
-		window_set_cursor(cr_none);
-	cursor_sprite = cursor_other;
+		window_set_cursor(cr_default);
 	}
 	//Set the start point of the line
 	if global.tool = tool.line {
+		
+		
+		
 		holding = true;
 		x1 = round(mouse_x/global.gridsize)*global.gridsize;
 		y1 = round(mouse_y/global.gridsize)*global.gridsize;
 	}
-
+}
 
 if mouse_check_button_released(mb_left) {
 	if global.tool = tool.line {
+		
 		holding = false;
 		//Make the color
 		if control.picked_color = noone {
@@ -44,8 +50,7 @@ if mouse_check_button_released(mb_left) {
 if global.tool = tool.line {
 	
 	//Set the cursor sprite
-	window_set_cursor(cr_none);
-	cursor_sprite = cursor_other;
+	window_set_cursor(cr_default);
 	
 	//Set the other point of the line
 	if holding = true {

@@ -16,6 +16,5 @@ if global.tool = tool.pen || distance_to_point(mouse_x,mouse_y)<=1 {
 
 //Change the cursor sprite to pen
 if global.tool = tool.pen {
-	window_set_cursor(cr_none);
-	cursor_sprite = cursor_pen;
+	window_set_cursor(cr_default);
 }

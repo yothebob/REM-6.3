@@ -1,7 +1,7 @@
 /// @description Variables
 
 // save
-tick = 60;
+
 
 //The surface
 surface = surface_create(1920,1080);
