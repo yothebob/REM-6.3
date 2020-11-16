@@ -7,7 +7,7 @@
   "packageId": "",
   "productId": "ACBD3CFF4E539AD869A0E8E3B4B022DD",
   "author": "",
-  "date": "2020-11-16T12:07:50.0841965-08:00",
+  "date": "2020-11-16T14:49:33.2344728-08:00",
   "license": "Free to use, also for commercial games.",
   "description": "",
   "helpfile": "",
@@ -39,14 +39,7 @@
             2,
             2,
           ],"resourceVersion":"1.0","name":"surface_save_part_dialog","tags":[],"resourceType":"GMExtensionFunction",},
-      ],"constants":[],"ProxyFiles":[],"copyToTargets":9223372036854775807,"order":[
-        {"name":"screen_save_dialog","path":"extensions/screen_save_dialog/screen_save_dialog.yy",},
-        {"name":"screen_save_part_dialog","path":"extensions/screen_save_dialog/screen_save_dialog.yy",},
-        {"name":"surface_save_dialog","path":"extensions/screen_save_dialog/screen_save_dialog.yy",},
-        {"name":"surface_save_part_dialog","path":"extensions/screen_save_dialog/screen_save_dialog.yy",},
-        {"name":"screen_save_dialog","path":"extensions/screen_save_dialog/screen_save_dialog.yy",},
-        {"name":"screen_save_dialog","path":"extensions/screen_save_dialog/screen_save_dialog.yy",},
-      ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
+      ],"constants":[],"ProxyFiles":[],"copyToTargets":9223372036854775807,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
     {"filename":"screen_save_dialog.js","origname":"extensions\\js.js","init":"","final":"","kind":5,"uncompress":false,"functions":[
         {"externalName":"screen_save_dialog_js","kind":5,"help":"screen_save_dialog_js(fname, id)","hidden":false,"returnType":2,"argCount":2,"args":[
             2,
@@ -76,12 +69,7 @@
             2,
             2,
           ],"resourceVersion":"1.0","name":"surface_save_part_dialog_js","tags":[],"resourceType":"GMExtensionFunction",},
-      ],"constants":[],"ProxyFiles":[],"copyToTargets":9223372036854775807,"order":[
-        {"name":"screen_save_dialog_js","path":"extensions/screen_save_dialog/screen_save_dialog.yy",},
-        {"name":"screen_save_part_dialog_js","path":"extensions/screen_save_dialog/screen_save_dialog.yy",},
-        {"name":"surface_save_dialog_js","path":"extensions/screen_save_dialog/screen_save_dialog.yy",},
-        {"name":"surface_save_part_dialog_js","path":"extensions/screen_save_dialog/screen_save_dialog.yy",},
-      ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
+      ],"constants":[],"ProxyFiles":[],"copyToTargets":9223372036854775807,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
   ],
   "classname": "",
   "tvosclassname": "",
