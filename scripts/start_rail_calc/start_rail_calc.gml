@@ -18,7 +18,7 @@ else
 // calculate tr using 'smart' calculator----------------
 if global.tr_end < 1 and global.posts > 0
 {
-if Default
+if os_get_config() = "Default"
 {
 bubblesort(tr);
 }

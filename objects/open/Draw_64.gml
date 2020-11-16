@@ -1,5 +1,5 @@
 /// @description Description of tool
-if Default
+if os_get_config() = "Default"
 {
 draw_self();
 }
