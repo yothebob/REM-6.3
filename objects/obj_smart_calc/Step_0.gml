@@ -102,6 +102,7 @@ break;
 
 if (global.totalstart == 1)
 {
+	
 	if global.fascia == false
 	{
 		udpostcost = global.ud - global.tallpost;

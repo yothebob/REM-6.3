@@ -1,9 +1,13 @@
 
 function get_glass_calc() 
 {
+
+if os_get_config() == "HTML" {var noval = 0;}
+else if os_get_config() == "Default" {var noval = "";}
+	
 if global.glass == 1
 {
-	global.polish = get_integer("# of total panels needed?", "");
+	global.polish = get_integer("# of total panels needed?",noval);
 
 		if (global.threesix = true)
 		{

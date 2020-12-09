@@ -14,5 +14,5 @@ if tick <= 0 and place_meeting(x,y, obj_mouse)
 {
 	
 	draw_set_color(c_dkgray);
-	draw_text(mouse_x-10,mouse_y+10,"Scale (Ctrl + M)");
+	draw_text(mouse_x-10,mouse_y+10,"Measure (Ctrl + M)");
 }

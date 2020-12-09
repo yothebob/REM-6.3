@@ -1,12 +1,16 @@
 
 function get_cable_calc() 
 {
+	
+if os_get_config() == "HTML" {var noval = 0;}
+else if os_get_config() == "Default" {var noval = "";}
+	
 if (global.getcable == 1)
 {
-global.endpost = get_integer("# of Terminal posts(POSTS THAT USE A TTHS/TTMS):", "");
-global.inter = get_integer("# of DT/90/1s posts that use 2 DP:" + "\n DO NOT DOUBLE COUNT POSTS" , "");
+global.endpost = get_integer("# of Terminal posts(POSTS THAT USE A TTHS/TTMS):", noval);
+global.inter = get_integer("# of DT/90/1s posts that use 2 DP:" + "\n DO NOT DOUBLE COUNT POSTS" , noval);
 threeside = global.ts;
-oneside = get_integer("# of 1s posts (DO NOT DOUBLE COUNT):", "");
+oneside = get_integer("# of 1s posts (DO NOT DOUBLE COUNT):", noval);
 
 if !show_question("BR?")
 {

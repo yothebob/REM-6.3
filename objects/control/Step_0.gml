@@ -1,7 +1,7 @@
 /// @description Draw always to mouse position
 
 
-if mouse_check_button_released(mb_left) and surface_exists(surface)
+if mouse_check_button_released(mb_left) and surface_exists(surface) and os_get_config() == "Default"
 	{
 	surface_set_target(surface);
 	buffer_delete(buffer);

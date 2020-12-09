@@ -27,6 +27,12 @@ global.yending = mouse_y;
 global.scale = point_distance(global.xstar,global.ystar,global.xending,global.yending);
 global.scale = (round((global.scale/32)*2))/2;
 global.scale = abs(global.scale);
+if ii < 10 and global.tool == tool.cable  and global.scale > .5
+	{
+	obj_smart_calc.tr[ii] = global.scale;
+	ii +=1;
+	}
+
 }
 
 global.drawx = mouse_x - global.xstar;

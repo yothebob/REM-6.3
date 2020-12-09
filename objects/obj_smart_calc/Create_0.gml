@@ -23,6 +23,7 @@ trr[9] = 0;
 
 trx = 0;
 
+
 fudge = 1;
 remainder = 1;
   

@@ -22,7 +22,8 @@ if os_get_config() = "Default"
 {
 bubblesort(tr);
 }
-
+if os_get_config() == "HTML" {var noval = 0;}
+else if os_get_config() == "Default" {var noval = "";}
 
 var i;
 for (i = 9; i > 0; i = i - 1)
@@ -118,9 +119,9 @@ global.tr_end = trx;
 	
 if(global.stairrail > 0)
 {
-global.stairpost = get_integer(" # of stair posts: ","");
+global.stairpost = get_integer(" # of stair posts: ",noval);
 
-global.tallpost = get_integer(" # of tall Stair posts: ","");
+global.tallpost = get_integer(" # of tall Stair posts: ",noval);
 }
 
 if show_question("Fascia Mount?")
@@ -133,7 +134,7 @@ global.fascia = false;
 }
 
 global.stairraildraw = (ceil(global.stairrail/10)/2);
-global.int90 = get_integer("# of 90's ","");
+global.int90 = get_integer("# of 90's ",noval);
 
 if (show_question("36 inch railing?"))
 {
@@ -154,12 +155,12 @@ else
 	 }
 total = tr[1] + tr[2] + tr[3] + tr[4] + tr[5] + tr[6] + tr[7] + tr[8] + tr[9];
 picket = total + global.stairrail;
-global.ep = get_integer("# of TR200 starts/stops: ","");
+global.ep = get_integer("# of TR200 starts/stops: ",noval);
 
 global.rcb112 = ceil((global.tallpost) /6);
 
 
-global.int135 = get_integer( "# of 135 splices: ","");
+global.int135 = get_integer( "# of 135 splices: ",noval);
 
 global.sds = ceil((((global.int90*10) + (global.int135*10) + (global.spl200*10))+(global.posts *2))/25);
 
