@@ -1,7 +1,7 @@
 {
   "option_windows_display_name": "Rail Quote Program",
   "option_windows_executable_name": "Rail Quote Program",
-  "option_windows_version": "6.0.2.2",
+  "option_windows_version": "6.0.5.0",
   "option_windows_company_info": "Precision Rail",
   "option_windows_product_info": "Railing Quote Program",
   "option_windows_copyright_info": "(c) 2020",

@@ -5,12 +5,23 @@ var hotkey = keyboard_check(vk_control) and keyboard_check_pressed(ord("S"));
 if (mouse_check_button_pressed(mb_left) && distance_to_point(mouse_x,mouse_y) <= 1) or hotkey {
 	surface_copy(obackground.background,0,0,control.surface);
 	
-		
-	var file = -1;
-	if file != "" 
+	if os_get_config() == "HTML"
 		{
-		surface_save_dialog(control.surface,"Drawing.png");
+		var file = -1;
+		if file != "" 
+			{
+			surface_save_dialog(control.surface,"Drawing.png");
+			}
+		}	
+	else
+		{
+		var file = get_save_filename("|Drawing|*.png","Drawing");
+		if file != ""
+			{
+			surface_save(obackground.background,file);
+			}
 		}
+		
 }
 
 
