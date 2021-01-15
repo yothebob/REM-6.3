@@ -6,7 +6,7 @@ if mouse_check_button_released(mb_left) and surface_exists(surface) and os_get_c
 	surface_set_target(surface);
 	buffer_delete(buffer);
 	buffer = buffer_create(1920*1080*4,buffer_grow,1);
-	buffer_get_surface(buffer,surface,0,0,0);
+	buffer_get_surface(buffer,surface,0);
 	surface_reset_target();
 	}
 
@@ -25,7 +25,7 @@ if !surface_exists(surface)
 	{
 	surface = surface_create(1920,1080);
 	surface_set_target(surface);
-	buffer_set_surface(buffer,surface,0,0,0);
+	buffer_set_surface(buffer,surface,0);
 	surface_reset_target();
 	}
 	else
