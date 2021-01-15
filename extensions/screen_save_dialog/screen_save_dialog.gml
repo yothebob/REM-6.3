@@ -33,7 +33,7 @@ if (os_browser != browser_not_a_browser) {
 	var _width = surface_get_width(_surf);
 	var _height = surface_get_height(_surf);
 	var _buffer = buffer_create(_width * _height * 4, buffer_fixed, 1);
-	buffer_get_surface(_buffer, _surf, 0, 0, 0);
+	buffer_get_surface(_buffer, _surf, 0);
 	surface_save_dialog_js(_fname, buffer_get_address(_buffer), _width, _height);
 } else {
 	var _path = get_save_filename("PNG image|*.png", _fname);
@@ -53,7 +53,7 @@ if (os_browser != browser_not_a_browser) {
 	var _swidth = surface_get_width(_surf);
 	var _sheight = surface_get_height(_surf);
 	var _buffer = buffer_create(_swidth * _sheight * 4, buffer_fixed, 1);
-	buffer_get_surface(_buffer, _surf, 0, 0, 0);
+	buffer_get_surface(_buffer, _surf, 0);
 	surface_save_part_dialog_js(_fname, buffer_get_address(_buffer), _swidth, _sheight, _x, _y, _width, _height);
 } else {
 	var _path = get_save_filename("PNG image|*.png", _fname);
