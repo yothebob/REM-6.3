@@ -33,7 +33,7 @@ var vpos_y = camera_get_view_y(view_camera[0]);
 var new_x = lerp(vpos_x,vpos_x+(view_w - zoom_level * default_zoom_width)/2, rate);
 var new_y = lerp(vpos_y,vpos_y+(view_h - zoom_level * default_zoom_height)/2, rate);
 
-//camera_set_view_pos(view_camera[0], obj_mouse.x, obj_mouse.y);
+camera_set_view_pos(view_camera[0], new_x, new_y);
 camera_set_view_size(view_camera[0], new_w, new_h);
 camera_set_view_target(view_camera[0], obj_mouse);
 }
