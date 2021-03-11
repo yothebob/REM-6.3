@@ -164,6 +164,16 @@ global.int135 = get_integer( "# of 135 splices: ",noval);
 
 global.sds = ceil((((global.int90*10) + (global.int135*10) + (global.spl200*10))+(global.posts *2))/25);
 
+var a;
+for (a = 9; a > 0 ; a = a - 1)
+{
+	if (tr[a] > 20)
+		{
+		global.spl200 = global.spl200 + floor(tr[a]/20);
+		}
+}
+
+
 if show_question("Picket railing?")
 {
 	global.picket = 1;
@@ -187,14 +197,6 @@ if show_question("Cable railing?")
 
 
 // spl200 calc.----------------------------------------
-var a;
-for (a = 9; a > 0 ; a = a - 1)
-{
-	if (tr[a] > 20)
-		{
-		global.spl200 = global.spl200 + floor(tr[a]/20);
-		}
-}
 
 }
 
